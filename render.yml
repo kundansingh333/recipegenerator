@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: aiproject
+    env: python
+    buildCommand: |
+      cd frontend
+      npm install
+      npm run build
+    startCommand: gunicorn app:app
+    buildFilter:
+      paths:
+        - backend/**/*
+        - frontend/**/*
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
+    plan: free
