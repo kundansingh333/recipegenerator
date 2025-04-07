@@ -1,17 +1,11 @@
 services:
   - type: web
-    name: aiproject
+    name: aiproject-backend
     env: python
-    buildCommand: |
-      cd frontend
-      npm install
-      npm run build
-    startCommand: gunicorn app:app
-    buildFilter:
-      paths:
-        - backend/**/*
-        - frontend/**/*
+    buildCommand: " "
+    startCommand: "python app.py"
+    
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.10
-    plan: free
+      - key: PORT
+        value: 10000
+    
