@@ -50,7 +50,7 @@ function LoadingSpinner({ darkMode }) {
   return (
     <div className="fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-opacity-50 z-50">
       <FacebookCircularProgress />
-      <p className={`text-xl font-semibold mt-4 ${darkMode ? 'text-[#86efad]' : 'text-[#4ade81]'} animate-pulse`}>Loading...</p>
+      <p className={`text-xl font-semibold mt-4 ${darkMode ? 'text-[#86efad]' : 'text-[#4ade81]'} animate-pulse`}>Generating Recipes...</p>
     </div>
   );
 }

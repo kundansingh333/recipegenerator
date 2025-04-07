@@ -398,9 +398,9 @@ function RecipeCarousel({ onRecipeClick }) {
           />
           <button
             onClick={handleCookThis}
-            className="mt-4 px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
+            className="mt-4 px-6 py-3  bg-green-600 text-white rounded-3xl shadow hover:bg-green-700 transition"
           >
-            Cook This!
+            Try This!
           </button>
         </>
       ) : (

@@ -727,7 +727,7 @@ const Chatbot = forwardRef(({ darkMode }, ref) => {
                           {Instructions?.length > 0 && (
                             <div className="mb-2">
                               <strong>Instructions:</strong>
-                              <ol className="list-decimal ml-5">{Instructions.map((step, i) => <li key={i}>{step}</li>)}</ol>
+                              <ol className="list-disc ml-5">{Instructions.map((step, i) => <li key={i}>{step}</li>)}</ol>
                             </div>
                           )}
                         </div>

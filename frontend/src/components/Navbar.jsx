@@ -17,7 +17,7 @@ function Navbar({ darkMode, setDarkMode }) {
     }`}>
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-bold text-green-700">
-          <span className="text-green-500">Recipe</span>Generator
+          <span className="text-green-500">Chef</span>Bot
         </h1>
         <nav>
           <ul className="flex space-x-4 items-center">
