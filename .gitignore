@@ -1,7 +1,23 @@
 # .gitignore
+# Node.js
 node_modules/
-build/
-backend/.env
-__pycache__/
-.DS_Store
 frontend/node_modules/
+
+# Build output
+build/
+frontend/build/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment variables
+backend/.env
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
