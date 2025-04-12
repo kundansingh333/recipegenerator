@@ -13,7 +13,7 @@ import LoadingSpinner from './LoadingSpinner';
 import abusiveWords from '../data/abusiveWords.json';
 import humanNames from '../data/humanNames.json';
 
-// ✅ Using local backend URL
+// Using local backend URL
 const API_URL = import.meta.env.VITE_BACKEND_URL;
 
 
