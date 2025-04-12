@@ -62,14 +62,15 @@ function About({ darkMode }) {
           <section>
             <h3 className={`text-xl mb-4 font-semibold ${darkMode?' text-green-300':'text-green-700'} `}>Connect With Us</h3>
             <p className={`leading-relaxed ${darkMode?'text-green-200':'text-green-600'}`} >
-              Have questions or ideas? Reach out and join our food-loving community on social media!
+              Have questions or ideas? Reach out and join our food-loving community on social media! &nbsp;&nbsp;
+              <a className='font-bold text-2xl hover:text-3xl' href="https://www.instagram.com/kundan_____________singh/">Instagram</a>
             </p>
           </section>
         </div>
       </main>
 
       <footer className={`py-4 text-center ${darkMode ? 'bg-green-900 text-white' : 'bg-green-200 text-green-800'}`}>
-        <p>&copy; {new Date().getFullYear()} Recipe Generator. All rights reserved.</p>
+      <p> Developed by Kundan, Anish and Shivam</p>
       </footer>
     </div>
   );

@@ -77,7 +77,8 @@ function Home({ darkMode }) {
               : 'bg-green-100 bg-opacity-70 text-green-900'
           }`}
         >
-          <p>&copy; {new Date().getFullYear()} Recipe Generator. All rights reserved.</p>
+          
+          <p>&copy; {new Date().getFullYear()} ChefBot. All rights reserved.</p>
         </footer>
       </div>
     </div>

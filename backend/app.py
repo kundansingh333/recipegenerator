@@ -76,7 +76,7 @@ Please format the recipe with the following sections:
             for line in lines:
                 line = line.strip()
 
-                # ✅ Recipe name key is now "RecipeName"
+                # Recipe name key is "RecipeName"
                 if line.startswith('*Recipe-Name:*') or line.startswith('*Recipe:*'):
                     current_section = 'RecipeName'
                     line = line.replace('*Recipe-Name:*', '').replace('*Recipe:*', '')

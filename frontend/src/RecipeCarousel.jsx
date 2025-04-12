@@ -47,7 +47,7 @@ function RecipeCarousel({ onRecipeClick }) {
   const handleCookThis = () => {
     if (currentRecipe?.name) {
       localStorage.setItem('selectedRecipeName', currentRecipe.name);
-      navigate('/chatbot'); // make sure this matches your chatbot route
+      navigate('/chatbot'); 
     }
   };
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 function RecipeImage({ recipeImage }) {
   if (!recipeImage) {
-    return null; // Don't render if no image
+    return null; 
   }
 
   return (
