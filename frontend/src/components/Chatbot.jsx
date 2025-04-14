@@ -16,8 +16,6 @@ import humanNames from '../data/humanNames.json';
 // Using local backend URL
 const API_URL = import.meta.env.VITE_BACKEND_URL;
 
-
-
 const Chatbot = forwardRef(({ darkMode }, ref) => {
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
@@ -72,14 +70,15 @@ const Chatbot = forwardRef(({ darkMode }, ref) => {
   const handleInputChange = (e) => {
     setQuery(e.target.value);
   };
-  // console.log("API_URL:", API_URL);
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!query.trim()) return;
 
     const lowerQuery = query.toLowerCase();
+
+    const foodWhitelist = ['chicken', 'basil', 'rosemary', 'ginger', 'chili', 'sage']; // Add more if needed
+    const skipNameFilter = foodWhitelist.some(food => lowerQuery.includes(food));
 
     const containsAbuse = abusiveWords.words.some(word =>
       lowerQuery.includes(word.toLowerCase())
@@ -88,7 +87,7 @@ const Chatbot = forwardRef(({ darkMode }, ref) => {
       lowerQuery.includes(name.toLowerCase())
     );
 
-    if (containsAbuse || containsName) {
+    if (containsAbuse || (containsName && !skipNameFilter)) {
       setMessages(prev => [
         ...prev,
         { type: 'error', text: 'Invalid Input. Please enter a valid food-related query.' },

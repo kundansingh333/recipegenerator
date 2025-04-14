@@ -9,14 +9,14 @@ function About({ darkMode }) {
       {/* className="bg-green-50 " */}
         <div className={`rounded-lg shadow-md p-8 ${darkMode?'bg-green-900':'bg-green-200'}`}>
           <h2 className={`text-3xl mb-6 font-extrabold ${darkMode?' text-green-300':'text-green-700'} `}>
-            About RecipeGenerator
+            About ChefBot
           </h2>
 
           {/* Mission */}
           <section className="mb-10">
             <h3 className={`text-xl mb-4 font-semibold ${darkMode?' text-green-300':'text-green-700'} `}>Our Mission</h3>
             <p className={`leading-relaxed ${darkMode?'text-green-200':'text-green-600'}`} >
-              At RecipeGenerator, our mission is to make cooking accessible and enjoyable for everyone.
+              At ChefBot, our mission is to make cooking accessible and enjoyable for everyone.
               Whether you're a seasoned chef or just starting out, we help you discover flavors and create amazing meals.
             </p>
           </section>
